@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.SpringBoot1.mapper.registerMapper">
+
+    <insert id="insertIntoRegister" parameterType="hashmap">
+        insert into register (userId,`time`) values (#{userId},#{date})
+    </insert>
+
+    <insert id="insertIntoUser" parameterType="String">
+        insert into `user` (userId,password) values(#{userId},#{passWord})
+    </insert>
+
+    <insert id="insertIntoUserInformation" parameterType="String">
+        insert into userinformation(userId,depart,avatar,phoneNum) values (#{userId},#{depart},#{avatar},#{phoneNum})
+    </insert>
+
+
+</mapper>
