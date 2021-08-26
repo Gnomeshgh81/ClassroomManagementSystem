@@ -15,8 +15,8 @@ public class registerController {
     registerService registerService;
 
     @PostMapping("/register")
-    public Map<String,Object> register(String userId,String passWord,
+    public Map<String,Object> register(String userId,String userName,String roles,String passWord,
                                        String phoneNum,String depart,String avatar){
-        return registerService.register(userId,passWord,phoneNum,depart,avatar);
+        return registerService.register(userId,userName,roles,passWord,phoneNum,depart,avatar);
     }
 }

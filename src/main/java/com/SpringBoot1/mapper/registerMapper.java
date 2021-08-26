@@ -9,6 +9,6 @@ public interface registerMapper {
 
     void insertIntoUser(String userId,String passWord);
 
-    void insertIntoUserInformation(String userId,String phoneNum,String depart,String avatar);
+    void insertIntoUserInformation(String userId,String userName,String roles,String phoneNum,String depart,String avatar);
 
 }

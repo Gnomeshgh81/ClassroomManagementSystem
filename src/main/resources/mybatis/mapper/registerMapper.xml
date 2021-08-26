@@ -13,7 +13,7 @@
     </insert>
 
     <insert id="insertIntoUserInformation" parameterType="String">
-        insert into userinformation(userId,depart,avatar,phoneNum) values (#{userId},#{depart},#{avatar},#{phoneNum})
+        insert into userinformation(userId,userName,roles,depart,avatar,phoneNum) values (#{userId},#{userName},#{roles},#{depart},#{avatar},#{phoneNum})
     </insert>
 
 

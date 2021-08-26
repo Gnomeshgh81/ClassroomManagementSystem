@@ -20,7 +20,7 @@ public class registerService {
     @Autowired
     registerMapper registerMapper;
 
-    public Map<String, Object> register(String userId, String passWord,
+    public Map<String, Object> register(String userId,String userName,String roles, String passWord,
                                         String phoneNum, String depart, String avatar) {
         Map<String,Object> re = new HashMap<>();
         try {
@@ -31,7 +31,7 @@ public class registerService {
 
             registerMapper.insertIntoRegister(map);
             registerMapper.insertIntoUser(userId,passWord);
-            registerMapper.insertIntoUserInformation(userId,phoneNum,depart,avatar);
+            registerMapper.insertIntoUserInformation(userId,userName,roles,phoneNum,depart,avatar);
         }catch (Exception e){
             log.info("注册出现异常，异常情况为：[{}]",e);
             re.put("state",false);
