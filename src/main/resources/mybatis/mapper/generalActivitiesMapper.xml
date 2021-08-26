@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.SpringBoot1.mapper.generalActivitiesMapper">
+
+    <insert id="insertIntoGeneralActivities" parameterType="com.SpringBoot1.entity.generalclassroom">
+        insert into generalclassroom
+         (speedOfProgress,grade,applicant,applicantPhoneNumber
+         ,units,responsibleTeacher,responsibleTeacherPhoneNumber,reason
+         ,Participants,NumberOfParticipants,ClassroomType,IntentionArea
+         ,week,`day`,`time`,SelectedClassroom,remarks,CommentsOfUser
+         ,CommentsOfAcademicAffairsOffice,CommentsOfWechatCenter) values
+
+         (#{speedOfProgress},#{grade},#{applicant},#{applicantPhoneNumber},#{units}
+        ,#{responsibleTeacher},#{responsibleTeacherPhoneNumber},#{reason}
+        ,#{Participants},#{NumberOfParticipants},#{ClassroomType},#{IntentionArea}
+        ,#{week},#{day},#{time},#{SelectedClassroom},#{remarks}
+        ,#{CommentsOfUser},#{CommentsOfAcademicAffairsOffice},#{CommentsOfWechatCenter})
+    </insert>
+
+
+</mapper>
