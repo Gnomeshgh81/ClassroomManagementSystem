@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.SpringBoot1.mapper.specialActivitiesMapper">
+
+    <insert id="insertIntoActivityClassroom" parameterType="com.SpringBoot1.entity.activityclassroom">
+
+        insert into activityclassroom
+         (speedOfProgress,grade,applicant,applicantPhoneNumber
+         ,units,responsibleTeacher,responsibleTeacherPhoneNumber,reason
+         ,nameOfReporter,reporterUnit,nationalityOfReporter,major,post,contactNumber
+         ,theme,Participants,NumberOfParticipants,ClassroomType,IntentionArea
+         ,week,`day`,`time`,SelectedClassroom,remarks,CommentsOfUser
+         ,CommentsOfAcademicAffairsOffice,CommentsOfWechatCenter) values
+
+         (#{speedOfProgress},#{grade},#{applicant},#{applicantPhoneNumber},#{units}
+        ,#{responsibleTeacher},#{responsibleTeacherPhoneNumber},#{reason},#{nameOfReporter},#{reporterUnit}
+        ,#{nationalityOfReporter},#{major},#{post},#{contactNumber},#{theme},#{Participants},#{NumberOfParticipants},#{ClassroomType},#{IntentionArea}
+        ,#{week},#{day},#{time},#{SelectedClassroom},#{remarks}
+        ,#{CommentsOfUser},#{CommentsOfAcademicAffairsOffice},#{CommentsOfWechatCenter})
+
+
+    </insert>
+
+</mapper>

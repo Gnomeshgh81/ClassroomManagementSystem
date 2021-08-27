@@ -17,7 +17,6 @@ import java.util.Map;
 @Slf4j
 public class JWTUntil {
     private static final String SING = "@#%!$@!2@2#3@3@$$%^&7#$@#^$";
-
     /**
      * 生成token
      * @param map 传入需要传递给前端的内容
